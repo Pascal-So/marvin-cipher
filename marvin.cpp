@@ -179,12 +179,16 @@ int main(){
     string characterFrequency = "etaoinsrhldcumfpgwybvkxjqz";
 
     //string message = "ahlbtr krtt afhb ldjnvrtlkrvn kvaadumk ie cfstlaqtf";
-    string message = "ahdmds nsaa lhfl ajdkhxygfifs kvaadmdk fl ahfygybyn";
-    
-    cout<< decode(deLayout, 4, 8, characterFrequency, message) << endl;
+    //string message = "ahdmds nsaa lhfl ajdkhxygfifs kvaadmdk fl ahfygybyn";
+    string line;
+    while(std::getline(cin, line)){
+      cout << decode(deLayout, 2, 3, characterFrequency, line) << endl;
+    }
+        
+      //cout<< decode(deLayout, 4, 8, characterFrequency, message) << endl;
 
-    string plaintext = "now we can finally speak in marvin";
+    //string plaintext = "now we can finally speak in marvin";
 
-    cout<< encode(deLayout, 4, 8, characterFrequency, plaintext) << endl;
+    //cout<< encode(deLayout, 4, 8, characterFrequency, plaintext) << endl;
 }
 
